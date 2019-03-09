@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceBlockGame", "DiceBlockGame\DiceBlockGame\DiceBlockGame.csproj", "{B19598CA-C3C2-4EEE-B73F-58595007D86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceBlockGame.Desktop", "DiceBlockGame\DiceBlockGame.Desktop\DiceBlockGame.Desktop.csproj", "{BF1AEAA0-9477-46B2-A9DB-121503538985}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B19598CA-C3C2-4EEE-B73F-58595007D86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19598CA-C3C2-4EEE-B73F-58595007D86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19598CA-C3C2-4EEE-B73F-58595007D86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19598CA-C3C2-4EEE-B73F-58595007D86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1AEAA0-9477-46B2-A9DB-121503538985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1AEAA0-9477-46B2-A9DB-121503538985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1AEAA0-9477-46B2-A9DB-121503538985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1AEAA0-9477-46B2-A9DB-121503538985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
