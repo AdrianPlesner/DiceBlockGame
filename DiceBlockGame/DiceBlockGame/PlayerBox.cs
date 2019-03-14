@@ -19,6 +19,8 @@ namespace DiceBlockGame
             MinimumSize = new Size(100, 300);
             btnConfirm.Click += BtnConfirm_Click;
             btnRoll.Click += BtnRoll_Click;
+            color = new Color((float)Rand.NextDouble(), (float)Rand.NextDouble(), (float)Rand.NextDouble());
+            cpPlayerColor.Value = color;
             cpPlayerColor.ValueChanged += CpPlayerColor_ValueChanged;
             layout.Items.Add(lblScore);
             layout.Items.Add(cpPlayerColor);
@@ -32,6 +34,7 @@ namespace DiceBlockGame
         public int PlayerNumber;
         private int Dice1 = 0, Dice2 = 0;
         private int Score = 0;
+        public Color color = new Color();
 
 
         private Label lblScore = new Label { Text = "Score: 0" };
@@ -70,8 +73,9 @@ namespace DiceBlockGame
             btnConfirm.Enabled = true;
         }
 
-        void CpPlayerColor_ValueChanged(object sender, EventArgs e)
+        void CpPlayerColor_ValueChanged(object Sender, EventArgs e)
         {
+            color = cpPlayerColor.Value;
         }
 
     }

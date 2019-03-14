@@ -3782,11 +3782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/DiceBlockGame.Desktop.csproj",
+      "projectUniqueName": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/DiceBlockGame.Desktop.csproj",
       "projectName": "DiceBlockGame.Desktop",
-      "projectPath": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/DiceBlockGame.Desktop.csproj",
+      "projectPath": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/DiceBlockGame.Desktop.csproj",
       "packagesPath": "/Users/adrian/.nuget/packages/",
-      "outputPath": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/obj/",
+      "outputPath": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame.Desktop/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -3803,8 +3803,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj": {
-              "projectPath": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj"
+            "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj": {
+              "projectPath": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj"
             }
           }
         }

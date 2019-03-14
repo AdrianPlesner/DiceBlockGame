@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{BF1AEAA0-9477-46B2-A9DB-121503538985}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DiceBlockGame/DiceBlockGame/MainForm.cs">
+    <Files>
+      <File FileName="DiceBlockGame/DiceBlockGame/MainForm.cs" Line="87" Column="59" />
+      <File FileName="DiceBlockGame/DiceBlockGame/PlayerBox.cs" Line="78" Column="41" />
+      <File FileName="DiceBlockGame/DiceBlockGame/PlayField.cs" Line="21" Column="18" />
+      <File FileName="DiceBlockGame/DiceBlockGame/Block.cs" Line="26" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DiceBlockGame" expanded="True">
+            <Node name="DiceBlockGame" expanded="True">
+              <Node name="MainForm.cs" selected="True" />
+            </Node>
+            <Node name="DiceBlockGame.Desktop" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DiceBlockGame.Desktop PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -14,6 +14,9 @@ namespace DiceBlockGame
         };
 
         private PixelLayout Layout = new PixelLayout();
+        private PlayerBox[] Players;
+        private int NumPlayers;
+        private int PlayerTurn = 0;
 
         public MainForm()
         {
@@ -60,12 +63,10 @@ namespace DiceBlockGame
 
 
             dialog.ShowModal();
-
-            StartNewGame(dialog.Result[0], dialog.Result[1], dialog.Result[2]);
+            NumPlayers = dialog.Result[0];
+            StartNewGame(NumPlayers, dialog.Result[1], dialog.Result[2]);
 
         }
-
-        private PlayerBox[] Players;
 
         private void StartNewGame(int numPlayers, int sizeX, int sizeY)
         {
@@ -83,6 +84,8 @@ namespace DiceBlockGame
             Layout.Add(Players[0], 5, 5);
             Layout.Add(field, 120, 5);
             Layout.Add(Players[1], Bounds.Width - 120, Bounds.Height - 350);
+            field.Rows[0].Cells[0].Control.BackgroundColor = Players[0].color;
+            field.Rows[sizeY - 1].Cells[sizeX - 1].Control.BackgroundColor = Players[1].color;
             ResumeLayout();
 
         }
@@ -125,7 +128,16 @@ namespace DiceBlockGame
 
         private void PlayerEnablechange (object Sender, EventArgs e)
         {
-
+            PlayerBox ob = (PlayerBox)Sender;
+            if (ob.Enabled)
+            {
+                ob.btnRoll.Enabled = true;
+                PlayerTurn = ob.PlayerNumber - 1;
+            }
+            else
+            {
+                Players[ob.PlayerNumber % NumPlayers].Enabled = true;
+            }
 
         }
     }

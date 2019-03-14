@@ -7,3 +7,12 @@
 /Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/bin/Debug/netstandard1.6/DiceBlockGame.pdb
 /Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.dll
 /Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.pdb
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/bin/Debug/netstandard1.6/DiceBlockGame.deps.json
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/bin/Debug/netstandard1.6/DiceBlockGame.dll
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/bin/Debug/netstandard1.6/DiceBlockGame.pdb
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.csprojAssemblyReference.cache
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.csproj.CoreCompileInputs.cache
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.AssemblyInfoInputs.cache
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.AssemblyInfo.cs
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.dll
+/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/Debug/netstandard1.6/DiceBlockGame.pdb

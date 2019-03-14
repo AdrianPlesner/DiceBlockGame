@@ -8,8 +8,6 @@ namespace DiceBlockGame
 {
     public class PlayField : TableLayout
     {
-
-
         public PlayField(int x, int y)
         {
             X = x;
@@ -21,8 +19,7 @@ namespace DiceBlockGame
                 TableRow row = new TableRow();
                 for (int j = 0; j < x; j++)
                 {
-
-                    row.Cells.Add(new Block { Size = new Size(20, 20) });
+                    row.Cells.Add(new Block { Size = new Size(20, 20), PosX = j, PosY = i });
 
                 }
                 row.Cells.Add(null);
@@ -34,9 +31,5 @@ namespace DiceBlockGame
 
         private int X;
         private int Y;
-
-
-
-
     }
 }

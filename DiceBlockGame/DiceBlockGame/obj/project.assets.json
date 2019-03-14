@@ -4596,11 +4596,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj",
+      "projectUniqueName": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj",
       "projectName": "DiceBlockGame",
-      "projectPath": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj",
+      "projectPath": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/DiceBlockGame.csproj",
       "packagesPath": "/Users/adrian/.nuget/packages/",
-      "outputPath": "/Users/adrian/Projects/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/",
+      "outputPath": "/Users/adrian/Documents/GitHub/DiceBlockGame/DiceBlockGame/DiceBlockGame/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
