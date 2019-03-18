@@ -20,10 +20,23 @@ namespace DiceBlockGame
         }
 
         public bool Selected { get; set; }
-        public Color color = Colors.White;
+        private Color _color;
+        public Color Color
+        {
+            get
+            {
+                return _color;
+            }
+
+            set
+            {
+                BackgroundColor = _color = value;
+            }
+        }
 
         public int PosX;
         public int PosY;
+
 
         private void HoverOver(object Sender, EventArgs e)
         {
@@ -38,7 +51,7 @@ namespace DiceBlockGame
         {
             if (!Selected)
             {
-                this.BackgroundColor = color;
+                this.BackgroundColor = Color;
             }
         }
     }

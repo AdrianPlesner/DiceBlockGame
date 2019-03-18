@@ -83,9 +83,9 @@ namespace DiceBlockGame
             SetNewSize(sizeX, sizeY);
             Layout.Add(Players[0], 5, 5);
             Layout.Add(field, 120, 5);
+            field.Blocks[0, 0].Color = Players[0].color;
+            field.Blocks[sizeX-1, sizeY-1].Color = Players[1].color;
             Layout.Add(Players[1], Bounds.Width - 120, Bounds.Height - 350);
-            field.Rows[0].Cells[0].Control.BackgroundColor = Players[0].color;
-            field.Rows[sizeY - 1].Cells[sizeX - 1].Control.BackgroundColor = Players[1].color;
             ResumeLayout();
 
         }

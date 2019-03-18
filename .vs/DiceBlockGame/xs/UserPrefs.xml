@@ -1,21 +1,24 @@
 ﻿<Properties StartupConfiguration="{BF1AEAA0-9477-46B2-A9DB-121503538985}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DiceBlockGame/DiceBlockGame/MainForm.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DiceBlockGame/DiceBlockGame/Block.cs">
     <Files>
-      <File FileName="DiceBlockGame/DiceBlockGame/MainForm.cs" Line="87" Column="59" />
-      <File FileName="DiceBlockGame/DiceBlockGame/PlayerBox.cs" Line="78" Column="41" />
-      <File FileName="DiceBlockGame/DiceBlockGame/PlayField.cs" Line="21" Column="18" />
-      <File FileName="DiceBlockGame/DiceBlockGame/Block.cs" Line="26" Column="25" />
+      <File FileName="DiceBlockGame/DiceBlockGame/MainForm.cs" Line="97" Column="9" />
+      <File FileName="DiceBlockGame/DiceBlockGame/PlayerBox.cs" Line="23" Column="41" />
+      <File FileName="DiceBlockGame/DiceBlockGame/PlayField.cs" Line="19" Column="40" />
+      <File FileName="DiceBlockGame/DiceBlockGame/Block.cs" Line="30" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DiceBlockGame" expanded="True">
             <Node name="DiceBlockGame" expanded="True">
-              <Node name="MainForm.cs" selected="True" />
+              <Node name="Block.cs" selected="True" />
             </Node>
             <Node name="DiceBlockGame.Desktop" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
