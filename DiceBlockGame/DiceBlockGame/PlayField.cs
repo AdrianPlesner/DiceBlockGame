@@ -30,6 +30,8 @@ namespace DiceBlockGame
                     };
                     row.Cells.Add(block);
                     Blocks[j, i] = block;
+                    Blocks[j, i].MouseEnter += HoverOver;
+                    Blocks[j, i].MouseLeave += HoverOff;
 
                 }
                 row.Cells.Add(null);
@@ -38,13 +40,43 @@ namespace DiceBlockGame
             Rows.Add(null);
         }
 
+        public Color Hovercolor = Colors.Black;
+        public int[] Dice = new int[2]; 
+
         private int X;
         private int Y;
 
         public Block[,] Blocks;
 
-       
-        
+        private void HoverOver(object Sender, EventArgs e)
+        {
+            Block ob = (Block)Sender;
+            
+            ReColor(ob, Dice[0], Dice[1], Hovercolor);
+
+        }
+
+        private void HoverOff(object Sender, EventArgs e)
+        {
+            Block ob = (Block)Sender;
+            ReColor(ob, Dice[0], Dice[1], ob.Color);
+        }
+
+        private void ReColor(Block block, int x, int y, Color newColor)
+        {
+            if (block.PosX + x <= this.X && block.PosY + y <= this.Y)
+            {
+
+                for (int i = 0; i < x; i++)
+                {
+                    for (int j = 0; j < y; j++)
+                    {
+                        Blocks[block.PosX + i, block.PosY + j].BackgroundColor = newColor;
+                    }
+                }
+            }
+        }
+
 
 
     }

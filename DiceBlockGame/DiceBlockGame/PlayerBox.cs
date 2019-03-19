@@ -10,7 +10,7 @@ namespace DiceBlockGame
         {
             Text = title;
             PlayerNumber = num;
-            if(num > 1)
+            if (num > 1)
             {
                 this.Enabled = false;
                 btnRoll.Enabled = false;
@@ -26,13 +26,15 @@ namespace DiceBlockGame
             layout.Items.Add(cpPlayerColor);
             layout.Items.Add(btnRoll);
             layout.Items.Add(lblDice);
+            layout.Items.Add(btnShiftDice);
             layout.Items.Add(btnConfirm);
             Content = layout;
         }
 
         private Random Rand = new Random();
         public int PlayerNumber;
-        private int Dice1 = 0, Dice2 = 0;
+        public int Dice1 { get; private set; }
+        public int Dice2 { get; private set; }
         private int Score = 0;
         public Color color = new Color();
 
@@ -46,7 +48,10 @@ namespace DiceBlockGame
         private Label lblDice = new Label { Text = "Dice: 0 X 0" };
 
         public Button btnConfirm = new Button { Text = "Confirm", Enabled = false };
-        
+
+        public Button btnShiftDice = new Button { Text = "Shift", Enabled = false };
+
+
 
         private StackLayout layout = new StackLayout
         {
@@ -59,6 +64,7 @@ namespace DiceBlockGame
         private void BtnConfirm_Click(object sender, EventArgs e)
         {
             btnConfirm.Enabled = false;
+            btnShiftDice.Enabled = false;
             this.Enabled = false;
         }
 
@@ -71,12 +77,15 @@ namespace DiceBlockGame
             lblDice.Text = "Dice: " + Dice1 + " X " + Dice2;
             btnRoll.Enabled = false;
             btnConfirm.Enabled = true;
+            btnShiftDice.Enabled = true;
         }
 
         void CpPlayerColor_ValueChanged(object Sender, EventArgs e)
         {
             color = cpPlayerColor.Value;
         }
+
+
 
     }
 }

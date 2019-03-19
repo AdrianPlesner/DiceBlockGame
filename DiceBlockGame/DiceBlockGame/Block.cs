@@ -15,8 +15,8 @@ namespace DiceBlockGame
         public Block(string color)
         {
             BackgroundColor = Color.Parse(color);
-            MouseEnter += HoverOver;
-            MouseLeave += HoverOff;
+            //MouseEnter += HoverOver;
+            //MouseLeave += HoverOff;
         }
 
         public bool Selected { get; set; }
@@ -38,21 +38,6 @@ namespace DiceBlockGame
         public int PosY;
 
 
-        private void HoverOver(object Sender, EventArgs e)
-        {
-            if (!Selected)
-            {
-                this.BackgroundColor = Colors.Blue;
-                
-            }
-        }
 
-        private void HoverOff(object Sender, EventArgs e)
-        {
-            if (!Selected)
-            {
-                this.BackgroundColor = Color;
-            }
-        }
     }
 }

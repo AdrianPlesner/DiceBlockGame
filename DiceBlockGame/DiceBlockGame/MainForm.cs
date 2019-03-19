@@ -15,6 +15,7 @@ namespace DiceBlockGame
 
         private PixelLayout Layout = new PixelLayout();
         private PlayerBox[] Players;
+        private PlayField field;
         private int NumPlayers;
         private int PlayerTurn = 0;
 
@@ -76,8 +77,13 @@ namespace DiceBlockGame
                 string text = "Player" + (i + 1);
                 Players[i] = new PlayerBox(text, i + 1);
                 Players[i].EnabledChanged += PlayerEnablechange;
+                Players[i].btnRoll.Click += PlayerRollClick;
+                Players[i].btnShiftDice.Click += BtnShiftDice_Click;
             }
-            PlayField field = new PlayField(sizeX, sizeY);
+            field = new PlayField(sizeX, sizeY)
+            {
+                Hovercolor = Players[0].color
+            };
             SuspendLayout();
             Layout.RemoveAll();
             SetNewSize(sizeX, sizeY);
@@ -133,12 +139,26 @@ namespace DiceBlockGame
             {
                 ob.btnRoll.Enabled = true;
                 PlayerTurn = ob.PlayerNumber - 1;
+                field.Hovercolor = Players[PlayerTurn].color;
             }
             else
             {
                 Players[ob.PlayerNumber % NumPlayers].Enabled = true;
             }
 
+        }
+
+        private void PlayerRollClick(object sender, EventArgs e)
+        {
+            field.Dice[0] = Players[PlayerTurn].Dice2;
+            field.Dice[1] = Players[PlayerTurn].Dice1;
+        }
+
+        void BtnShiftDice_Click(object sender, EventArgs e)
+        {
+            int val = field.Dice[0];
+            field.Dice[0] = field.Dice[1];
+            field.Dice[1] = val;
         }
     }
 }
