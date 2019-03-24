@@ -32,6 +32,7 @@ namespace DiceBlockGame
                     Blocks[j, i] = block;
                     Blocks[j, i].MouseEnter += HoverOver;
                     Blocks[j, i].MouseLeave += HoverOff;
+                    Blocks[j, i].MouseDown += Block_Click;
 
                 }
                 row.Cells.Add(null);
@@ -46,38 +47,66 @@ namespace DiceBlockGame
         private int X;
         private int Y;
 
+        public bool TurnTaken = false;
+
         public Block[,] Blocks;
 
         private void HoverOver(object Sender, EventArgs e)
         {
-            Block ob = (Block)Sender;
-            
-            ReColor(ob, Dice[0], Dice[1], Hovercolor);
+            if (!TurnTaken)
+            {
+                Block ob = (Block)Sender;
+
+                ReColor(ob, Dice[0], Dice[1], Hovercolor);
+            }
 
         }
 
         private void HoverOff(object Sender, EventArgs e)
         {
-            Block ob = (Block)Sender;
-            ReColor(ob, Dice[0], Dice[1], ob.Color);
+            if (!TurnTaken)
+            {
+                Block ob = (Block)Sender;
+                ReColor(ob, Dice[0], Dice[1], Colors.White);
+            }
         }
 
         private void ReColor(Block block, int x, int y, Color newColor)
         {
-            if (block.PosX + x <= this.X && block.PosY + y <= this.Y)
-            {
+            // Is box available on playfield
+            bool canBox = block.PosX + x <= this.X && block.PosY + y <= this.Y;
 
-                for (int i = 0; i < x; i++)
+            if (canBox)
+            {
+                bool noSelect = true;
+                for (int i = 0; i<x; i++)
                 {
-                    for (int j = 0; j < y; j++)
+                    for (int j = 0; j<y; j++)
                     {
-                        Blocks[block.PosX + i, block.PosY + j].BackgroundColor = newColor;
+                        if (Blocks[block.PosX + i, block.PosY + j].Selected)
+                        {
+                            noSelect = false;
+                        }
+                    }
+                }
+                if (noSelect)
+                {
+                    //Recolor blocks
+                    for (int i = 0; i < x; i++)
+                    {
+                        for (int j = 0; j < y; j++)
+                        {
+                            Blocks[block.PosX + i, block.PosY + j].BackgroundColor = newColor;
+                        }
                     }
                 }
             }
         }
 
+        private void Block_Click(object sender, MouseEventArgs e)
+        {
 
+        }
 
     }
 }
