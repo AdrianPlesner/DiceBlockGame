@@ -47,13 +47,13 @@ namespace DiceBlockGame
         private int X;
         private int Y;
 
-        public bool TurnTaken = false;
+        public bool FirstTurn = false;
 
         public Block[,] Blocks;
 
         private void HoverOver(object Sender, EventArgs e)
         {
-            if (!TurnTaken)
+            if (!FirstTurn)
             {
                 Block ob = (Block)Sender;
 
@@ -64,7 +64,7 @@ namespace DiceBlockGame
 
         private void HoverOff(object Sender, EventArgs e)
         {
-            if (!TurnTaken)
+            if (!FirstTurn)
             {
                 Block ob = (Block)Sender;
                 ReColor(ob, Dice[0], Dice[1], Colors.White);
